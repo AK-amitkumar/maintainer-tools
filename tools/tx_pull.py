@@ -339,7 +339,7 @@ class TransifexPuller(object):
             tree = wrap_gh_call(
                 gh_repo.create_tree, [tree_data, tree_sha],
             )
-            message = 'Translation Bot updated translations from Transifex'
+            message = '[i18n] New Translations! We need your help ... \n\n to translate more: https://www.it-projects.info/page/translate'
             if tree:
                 commit = wrap_gh_call(
                     gh_repo.create_commit,
